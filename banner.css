@@ -1,0 +1,102 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+    background-color: #fff;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.banner {
+    width: 400px;
+    height: 350px;
+    background-image: url('/Assets/Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.female-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Full width */
+    max-width: 100%; /* Ensure it doesn't exceed full width */
+    padding: 20px;
+}
+
+#female-image {
+    height: 400px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, left 1s ease-in-out;
+}
+
+#indulge {
+    position: absolute;
+    bottom: 30px;
+    left: -100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, left 1s ease-in-out;
+}
+
+#headline {
+    position: absolute;
+    top: 30px;
+    left: -100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, left 1s ease-in-out;
+}
+
+#cta,
+#price {
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+#price {
+    padding-bottom: 40px;
+}
+
+.enjoy-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+}
+
+#spotify-logo {
+    position: absolute;
+    bottom: -30px;
+    right: -100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, right 1s ease-in-out;
+}
+
+.spotify-logo-container img {
+    height: 230px;
+}
+
+#replay-button {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    cursor: pointer; /* Add cursor pointer for interaction */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out; /* Smooth fade-in */
+}
